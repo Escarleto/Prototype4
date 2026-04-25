@@ -17,4 +17,9 @@ public class Enemy : MonoBehaviour
         Vector3 MoveDir = (Player.transform.position - transform.position).normalized;
         RB.AddForce(MoveDir * MoveSpd);
     }
+
+    private void LateUpdate()
+    {
+        if(transform.position.y < -10f) Destroy(gameObject);
+    }
 }
