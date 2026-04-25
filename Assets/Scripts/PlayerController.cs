@@ -3,8 +3,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody RB;
+    private GameObject FocalPoint;
     [SerializeField] private float MoveSpd = 5.0f;
-    [SerializeField] private GameObject FocalPoint;
 
     private void Start()
     {
